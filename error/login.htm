@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <style type="text/css">
+      <!--
+          @import url("../styles/styles/global.css");
+          @import url("../styles/styles/live.css");
+        -->
+    </style>
+    
+    <script type="text/javascript" src="/scripts/libs.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+    <script type="text/javascript" src="/scripts/widget/md5.js"></script>
+    <script type="text/javascript" src="/scripts/jquery/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery/jquery.form.js"></script>
+    <script type="text/javascript" src="/error/login.js"></script>
+    <script type="text/javascript" src="/scripts/multiLanguage.js"></script>
+    <script type="text/javascript">
+      language_include();
+      info_include();
+      check_session();
+    </script>
+    <link href="../scripts/jquery/themes/ipx/jquery.ui.all.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/styles/i3custom.css" rel="stylesheet" type="text/css" />
+    <link href="styles/styles/i3-layout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet/less" type="text/css" href="less/fixbug-veo16p.less" />
+    
+  </head>
+  
+  <body>
+    <div id="c_g_div_wrapper">
+      <div id="c_g_div_fixed_center">
+        <div id="dialog_renew_pwd" align="center">
+          <div>
+            <img src='../images/images/logo.png' class="login_logo"/>
+          </div>
+          <div>
+            <img src='../images/images/bg_line.png' class="login_divid_bar"/>
+          </div>
+          <div class="login_body">
+            <div class="login_input_field" style="height:66px;">
+              <table class="login_table">
+                <tbody>
+                  <tr>
+                    <th>
+                      <span id="langUserId">USER ID</span>
+                    </th>
+                    <td>
+                      <input id="username" maxlength="16" type="text"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span id="langPassword">PASSWORD</span>
+                    </th>
+                    <td>
+                      <input id="password" type="password" maxlength="16" value=""/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="warning_space">
+                <span id="warning_msg" style="color:red;"></span>
+              </div>
+              <div class="login_send">
+                <!-- <input type="button" id="btn_send_password" maxlength="16" value="Set password"/> -->
+                <!-- <input id="btn_login" type="button" value="login" style="width:180px"/> -->
+                <input type="button" id="btn_login" value="Login" style="height:20px;"/>
+              </div>
+            </div>
+
+            <div>
+              <img src='../images/images/bg_line.png' class="login_divid_bar" style="margin-top:24px;"/>
+            </div>
+
+            <div class="forgot_passwd_div">
+                <input type="button" id="btn_forgot_pw" value="lang_login_forgot_password"/>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="dialog_find_password" align="center" hidden>
+              <div class="l_div_find_pw_explain">
+                  <span> To reset master user account to factory default, please call i3 International technical support to receive your unique authorization code. </span>
+              </div>
+
+              <div class="l_div_find_pw_user_import">
+                  <div class="import_left">
+                      <span> Clcik "Export" to create the request file. Email the file to support@i3international.com </span>
+                  </div>
+                  <div class="import_right">
+                      <input type="button" id="btn_export_user_file" value="EXPORT"/>
+                  </div>
+              </div>
+
+              <div class="l_div_find_pw_rule">
+                  <span> Important: </span>
+                  <span> * Request file resets if exported more than once. Clcik "Export" only once. </span>
+                  <span> * Request file expires after 2 days (48 hours). Submit the file to i3 support team promptly. </span>
+                  <span>* Request file expires if the camera reboots/shuts off. Do not reboot/turn off. </span>
+              </div>
+
+              <div class="l_div_find_pw_code_import">
+                  <span> Click Import and locate the authorization file sent by i3 support team </span>
+
+                  <div style="margin-top:10px;">
+                      <span> Authorization Code </span>
+                  </div>
+                  <div class="import_left">
+                      <input type="text" id="text_authorization_code"/>
+                  </div>
+                  <div class="import_right import_auth_code">
+                      <input type="file" id="btn_browsing_auth_code" value="IMPORT" class="inputfile"/>
+                      <label for="btn_browsing_auth_code"> IMPORT </label>
+                  </div>
+              </div>
+
+              <div class="l_div_new_password">
+                  <table>
+                      <tr>
+                          <td>
+                              <span> New Password </span>
+                          </td>
+                          <td>
+                              <span> Confirm Password </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <input type="password" id="new_password"/>
+                          </td>
+                          <td>
+                              <input type="password" id="new_password_confirm"/>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          
+              <div class="l_div_find_pw_complete">
+                  <input type="button" id="complete_find_pw" value="Submit" />
+                  <input type="button" id="cancel_find_pw" value="Cancel" />
+              </div>
+          </div>
+               
+        <div id="login_first_login" align="center" hidden>
+              <div>
+                  <img src='../images/images/logo.png' class="login_logo" />
+              </div>
+              <div class="note">
+                  <p class="note-title">
+                      Username: i3admin
+                  </p>
+                  <p class="note-content">
+                      You must set your password because this is the first time
+                      login as i3admin user.
+                  </p>
+                  <p class="note-title">
+                      The password:
+                  </p>
+                  <p class="note-content">
+                      - Must be a minimum  of eight(8) characters is length
+                      - Must contain at least two(2) of each: digit, lowercase, uppercase and special character
+                      - Not allowed / \ : * ? ‘ “ < > | %
+                  </p>
+              </div>
+              <div>
+                  <img src='../images/images/bg_line.png' class="login_divid_bar" style="margin-top: 50px;" />
+              </div>
+              <table class="login_first_login_table">
+                  <tbody>
+                  <tr>
+                      <th>
+                          <span>NEW PASSWORD</span>
+                      </th>
+                      <td>
+                          <input id="new_password" maxlength="16" type="text" />
+                      </td>
+                  </tr>
+                  <tr>
+                      <th>
+                          <span>CONFIRM NEW PASSWORD</span>
+                      </th>
+                      <td>
+                          <input id="confirm_new_password" type="password" maxlength="16" value="" />
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+              <table class="login_first_login_table_buttons">
+                  <tbody>
+                  <tr>
+                      <th>
+                          <input type="button" value="i3 login" style="margin-right: 11px;"/>
+                      </th>
+                      <td>
+                          <input type="button" value="Set password" />
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+              <div>
+                  <img src='../images/images/bg_line.png' class="login_divid_bar" style="margin-top: 50px;" />
+              </div>
+          </div>
+               
+        <div class="login_copy_right">
+              <span id="copy_right_txt">© Copyright 2018 i3 International Inc.</span>
+          </div>
+      </div>
+    </div>
+    
+  <script type="text/javascript">
+    init_login();
+    lang_file(INFO_LANGUAGE, 'LOGIN');
+  </script>
+</body>
+
+</html>

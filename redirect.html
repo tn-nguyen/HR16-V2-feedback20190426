@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <style type="text/css">
+    <!--
+    @import url("../styles/styles/global.css");
+    @import url("../styles/styles/live.css");
+    -->
+  </style>
+    
+  <script type="text/javascript" src="scripts/global.js"></script>
+  <script type="text/javascript" src="scripts/libs.js"></script>
+  <script type="text/javascript" src="scripts/jquery/jquery-1.6.1.js"></script>
+  <script type="text/javascript" src="scripts/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+  <script type="text/javascript" src="scripts/Validator.js"></script>
+  <script type="text/javascript" src="redirect.js"></script>
+  <script type="text/javascript" src="/scripts/multiLanguage.js"></script>
+  
+  <script type="text/javascript">
+  <!--
+  function to_str(obj)
+  {
+    var temp = parseInt(obj);
+    if(temp < 10) return '0' + temp;
+    return obj;
+  }
+  var d = new Date();
+  var wString = "<script type=\"text/javascript\" src=\"/info/info.js?"+to_str(d.getHours())+to_str(d.getMinutes())+to_str(d.getSeconds())+"\"><\/script>";
+  document.write(wString);
+  d = null;
+  -->
+  </script>
+
+  <script type="text/javascript">
+    language_include();
+  </script>
+
+  <link href="scripts/jquery/themes/ipx/jquery.ui.all.css" rel="stylesheet" type="text/css"/>
+  <link href="styles/styles/i3custom.css" rel="stylesheet" type="text/css" />
+  <link href="styles/styles/i3-layout.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet/less" type="text/css" href="less/fixbug-veo16p.less" />
+  
+</head>
+
+<body>
+  <div id="c_g_div_wrapper">
+    <div id="c_g_div_fixed_center">
+      <!--password renew dialog-->
+      <div id="dialog_renew_pwd" title="Renew Password" align="center">
+        <div>
+          <img src='../images/images/logo.png' class="login_logo"/>
+        </div>
+        <div>
+          <img src='../images/images/bg_line.png' class="login_divid_bar"/>
+        </div>
+        <div class="login_body">
+          <input type='hidden' id='pre_password_set' name='pre_password_set' disabled>
+            <div class="login_input_field">
+              <span class="login_title" id="lang_password_title"> Password Setting </span>
+              <table class="login_table">
+                <tbody>
+                  <tr>
+                    <th>
+                      <span id="lang_new_password">New Password</span>
+                    </th>
+                    <td>
+                      <input type="password" id="new_password" name="new_password" maxlength="16"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <span id="lang_confirm_password">Confirm</span>
+                    </th>
+                    <td>
+                      <input type="password" id="confirm_password" name="confirm_password" maxlength="16"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="login_send">
+                <input type="button" id="btn_send_password" maxlength="16" value="lang_set_password" style="height:20px;"/>
+              </div>
+            </div>
+            <!-- <div class="password_rule"> -->
+            <div>
+              <img src='../images/images/bg_line.png' class="login_divid_bar"/>
+            </div>
+            <div>
+              <div>
+                <span id="password_rules_1"> 1. Must be greater than 8 characters and less than 16 characters long. </span>
+              </div>
+              <div>
+                <span id="password_rules_2"> 2. Must use more than 2 categories among the English capital letters, English lowercase letters, special characters or Numerics.</span>
+                
+              </div>
+              <div>
+                <span id="password_rules_3"> 3. Password cannot include invalid characters. </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+  <script>
+    rediect_index();
+    lang_file(INFO_LANGUAGE, 'REDIRECT');
+  </script>
+</html>
+
+<script type="text/javascript">
+
+</script>
