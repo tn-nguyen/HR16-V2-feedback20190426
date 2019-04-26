@@ -86,7 +86,7 @@ function print_top_menu(obj, cate)
     }
   }
 
-  obj.write("<li "+ sub_setup + "id='litopsetup'><a href='../html/setup_cam_image.htm'>"+sub_s_setup+"<span id='lang_Setup'>Setup</span>"+sub_e_setup+"</a></li>");
+  obj.write("<li "+ sub_setup + "id='litopsetup'><a href='../html/setup_cam_title.htm'>"+sub_s_setup+"<span id='lang_Setup'>Setup</span>"+sub_e_setup+"</a></li>");
   obj.write("<li "+ sub_infomation + "><a href='../html/versioninfo.htm'>"+sub_s_infomation+"<span id='lang_Infomation'>Infomation</span>"+sub_e_infomation+"</a></li>");
     
   obj.write("</ul>");

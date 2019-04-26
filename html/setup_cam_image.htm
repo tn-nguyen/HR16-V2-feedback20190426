@@ -54,22 +54,8 @@
                     </span>
                   </h2>
                   <div id="image_tabs">
-                    <ul>
-                        
-                          <li>
-                            <a href="#image_tab_camtitle">
-                              <span id="lang_camtitle_setup">
-                                CAMERA NAME
-                              </span>
-                            </a>
-                          </li>
-                          <li id="tab_stream">
-                            <a href="#image_tab_stream">
-                              <span id="lang_stream_setup">
-                                Stream Setup
-                              </span>
-                            </a>
-                          </li>
+                    <ul> 
+                          
                       <li>
                         <a href="#image_tab_setup">
                           <span id="lang_tab_image_setup">
@@ -77,8 +63,474 @@
                           </span>
                         </a>
                       </li>
+                      <li id="tab_stream">
+                        <a href="#image_tab_stream">
+                          <span id="lang_stream_setup">
+                            Stream Setup
+                          </span>
+                        </a>
+                      </li>
                       
                     </ul>
+                    
+                    
+                    <div id="image_tab_stream">
+                      <div>
+                        <select class="add_width_150" id="stream_ch"></select>
+                      </div>
+                      <table>
+                        <tbody>
+                           <tr>
+                            <td rowspan="2" class="c_sp_tb_cam_stream_head">
+                              <span id="lang_property">속성</span>
+                            </td>
+                            <td colspan="2" class="c_sp_tb_cam_stream_head">
+                              <span id="lang_video_stream">비디오 영상</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_video_1">비디오1</span>
+                            </td>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_video_2">비디오2</span>
+                            </td>
+                          </tr>
+                          <tr style="display:none">
+                            <td>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt0" name="encoder_cnt0"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt1" name="encoder_cnt1"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt2" name="encoder_cnt2"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt3" name="encoder_cnt3"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt4" name="encoder_cnt4"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt5" name="encoder_cnt5"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt6" name="encoder_cnt6"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt7" name="encoder_cnt7"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt8" name="encoder_cnt8"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt9" name="encoder_cnt9"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt10" name="encoder_cnt10"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt11" name="encoder_cnt11"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt12" name="encoder_cnt12"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt13" name="encoder_cnt13"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt14" name="encoder_cnt14"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt15" name="encoder_cnt15"></input>
+                            </td>
+                            <td>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_codec">코덱</span>
+                            </td>
+                            <td>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default0_0" name="vcodec_default0_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default1_0" name="vcodec_default1_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default2_0" name="vcodec_default2_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default3_0" name="vcodec_default3_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default4_0" name="vcodec_default4_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default5_0" name="vcodec_default5_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default6_0" name="vcodec_default6_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default7_0" name="vcodec_default7_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default8_0" name="vcodec_default8_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default9_0" name="vcodec_default9_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default10_0" name="vcodec_default10_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default11_0" name="vcodec_default11_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default12_0" name="vcodec_default12_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default13_0" name="vcodec_default13_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default14_0" name="vcodec_default14_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default15_0" name="vcodec_default15_0">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                            </td>
+                            <td>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default0_1" name="vcodec_default0_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default1_1" name="vcodec_default1_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default2_1" name="vcodec_default2_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default3_1" name="vcodec_default3_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default4_1" name="vcodec_default4_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default5_1" name="vcodec_default5_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default6_1" name="vcodec_default6_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default7_1" name="vcodec_default7_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default8_1" name="vcodec_default8_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default9_1" name="vcodec_default9_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default10_1" name="vcodec_default10_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default11_1" name="vcodec_default11_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default12_1" name="vcodec_default12_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default13_1" name="vcodec_default13_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default14_1" name="vcodec_default14_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default15_1" name="vcodec_default15_1">
+                                <!-- <option>H.264</option>
+                                <option>H.265</option> -->
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_record_size">해상도</span>
+                            </td>
+                            <td>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name="res_default0_0"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default1_0" name="res_default1_0"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default2_0" name="res_default2_0"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default3_0" name="res_default3_0"></select>
+
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default4_0" name="res_default4_0"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default5_0" name="res_default5_0"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default6_0" name="res_default6_0"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default7_0" name="res_default7_0"></select>
+
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default8_0" name="res_default8_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default9_0" name="res_default9_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default10_0" name="res_default10_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default11_0" name="res_default11_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default12_0" name="res_default12_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default13_0" name="res_default13_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default14_0" name="res_default14_0"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default15_0" name="res_default15_0"></select>
+                            </td>
+                            <td>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name="res_default0_1"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default1_1" name="res_default1_1"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default2_1" name="res_default2_1"></select>
+                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default3_1" name="res_default3_1"></select>
+
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default4_1" name="res_default4_1"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default5_1" name="res_default5_1"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default6_1" name="res_default6_1"></select>
+                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default7_1" name="res_default7_1"></select>
+
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default8_1" name="res_default8_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default9_1" name="res_default9_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default10_1" name="res_default10_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default11_1" name="res_default11_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default12_1" name="res_default12_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default13_1" name="res_default13_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default14_1" name="res_default14_1"></select>
+                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default15_1" name="res_default15_1"></select>
+                            </td>
+                          </tr>
+                          <tr>
+                              <td class="c_sp_tb_cam_stream_head">
+                                <span id="lang_record_fps">FPS</span>
+                              </td>
+                              <td>
+                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_default0_0" name="fps_default0_0"></select>
+                              <td>
+                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_default0_0" name="fps_default0_1"></select>
+                                  </td>
+                            
+                            </tr>
+                            <tr id="tr_bitrate_control">
+                                <td class="c_sp_tb_cam_stream_head">
+                                  <span id="lang_bitrate_control">비트레이트 제어</span>
+                                </td>
+                                <td>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default0_0" name="bitctrl_default0_0"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default1_0" name="bitctrl_default1_0"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default2_0" name="bitctrl_default2_0"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default3_0" name="bitctrl_default3_0"></select>
+    
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default4_0" name="bitctrl_default4_0"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default5_0" name="bitctrl_default5_0"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default6_0" name="bitctrl_default6_0"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default7_0" name="bitctrl_default7_0"></select>
+    
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default8_0" name="bitctrl_default8_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default9_0" name="bitctrl_default9_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default10_0" name="bitctrl_default10_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default11_0" name="bitctrl_default11_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default12_0" name="bitctrl_default12_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default13_0" name="bitctrl_default13_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default14_0" name="bitctrl_default14_0"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default15_0" name="bitctrl_default15_0"></select>
+                                </td>
+                                <td>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default0_1" name="bitctrl_default0_1"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default1_1" name="bitctrl_default1_1"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default2_1" name="bitctrl_default2_1"></select>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default3_1" name="bitctrl_default3_1"></select>
+    
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default4_1" name="bitctrl_default4_1"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default5_1" name="bitctrl_default5_1"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default6_1" name="bitctrl_default6_1"></select>
+                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default7_1" name="bitctrl_default7_1"></select>
+    
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default8_1" name="bitctrl_default8_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default9_1" name="bitctrl_default9_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default10_1" name="bitctrl_default10_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default11_1" name="bitctrl_default11_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default12_1" name="bitctrl_default12_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default13_1" name="bitctrl_default13_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default14_1" name="bitctrl_default14_1"></select>
+                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default15_1" name="bitctrl_default15_1"></select>
+                                </td>
+                              </tr>
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_maximum_frame_rate">최대 FPS</span>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default0_0" name="fps_max_default0_0"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default1_0" name="fps_max_default1_0"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default2_0" name="fps_max_default2_0"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default3_0" name="fps_max_default3_0"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default4_0" name="fps_max_default4_0"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default5_0" name="fps_max_default5_0"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default6_0" name="fps_max_default6_0"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default7_0" name="fps_max_default7_0"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default8_0" name="fps_max_default8_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default9_0" name="fps_max_default9_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default10_0" name="fps_max_default10_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default11_0" name="fps_max_default11_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default12_0" name="fps_max_default12_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default13_0" name="fps_max_default13_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default14_0" name="fps_max_default14_0"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default15_0" name="fps_max_default15_0"></input>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default0_1" name="fps_max_default0_1"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default1_1" name="fps_max_default1_1"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default2_1" name="fps_max_default2_1"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default3_1" name="fps_max_default3_1"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default4_1" name="fps_max_default4_1"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default5_1" name="fps_max_default5_1"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default6_1" name="fps_max_default6_1"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default7_1" name="fps_max_default7_1"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default8_1" name="fps_max_default8_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default9_1" name="fps_max_default9_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default10_1" name="fps_max_default10_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default11_1" name="fps_max_default11_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default12_1" name="fps_max_default12_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default13_1" name="fps_max_default13_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default14_1" name="fps_max_default14_1"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default15_1" name="fps_max_default15_1"></input>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_maximum_bit_rate">최대 전송속도(kbps)</span>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default0_0" name="br_max_default0_0" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default1_0" name="br_max_default1_0"  type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default2_0" name="br_max_default2_0"  type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default3_0" name="br_max_default3_0"  type="text"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default4_0" name="br_max_default4_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default5_0" name="br_max_default5_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default6_0" name="br_max_default6_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default7_0" name="br_max_default7_0" type="text"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default8_0" name="br_max_default8_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default9_0" name="br_max_default9_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default10_0" name="br_max_default10_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default11_0" name="br_max_default11_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default12_0" name="br_max_default12_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default13_0" name="br_max_default13_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default14_0" name="br_max_default14_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default15_0" name="br_max_default15_0" type="text"></input>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default0_1" name="br_max_default0_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default1_1" name="br_max_default1_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default2_1" name="br_max_default2_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default3_1" name="br_max_default3_1" type="text"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default4_1" name="br_max_default4_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default5_1" name="br_max_default5_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default6_1" name="br_max_default6_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default7_1" name="br_max_default7_1" type="text"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default8_1" name="br_max_default8_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default9_1" name="br_max_default9_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default10_1" name="br_max_default10_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default11_1" name="br_max_default11_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default12_1" name="br_max_default12_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default13_1" name="br_max_default13_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default14_1" name="br_max_default14_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default15_1" name="br_max_default15_1" type="text"></input>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="c_sp_tb_cam_stream_head">
+                              <span id="lang_minumum_bit_rate">최소 전송속도(kbps)</span>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default0_0" name="br_min_default0_0" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default1_0" name="br_min_default1_0" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default2_0" name="br_min_default2_0" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default3_0" name="br_min_default3_0" type="text"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default4_0" name="br_min_default4_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default5_0" name="br_min_default5_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default6_0" name="br_min_default6_0" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default7_0" name="br_min_default7_0" type="text"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default8_0" name="br_min_default8_0" type="text" ></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default9_0" name="br_min_default9_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default10_0" name="br_min_default10_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default11_0" name="br_min_default11_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default12_0" name="br_min_default12_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default13_0" name="br_min_default13_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default14_0" name="br_min_default14_0" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default15_0" name="br_min_default15_0" type="text"></input>
+                            </td>
+                            <td>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default0_1" name="br_min_default0_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default1_1" name="br_min_default1_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default2_1" name="br_min_default2_1" type="text"></input>
+                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default3_1" name="br_min_default3_1" type="text"></input>
+
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default4_1" name="br_min_default4_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default5_1" name="br_min_default5_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default6_1" name="br_min_default6_1" type="text"></input>
+                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default7_1" name="br_min_default7_1" type="text"></input>
+
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default8_1" name="br_min_default8_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default9_1" name="br_min_default9_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default10_1" name="br_min_default10_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default11_1" name="br_min_default11_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default12_1" name="br_min_default12_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default13_1" name="br_min_default13_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default14_1" name="br_min_default14_1" type="text"></input>
+                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default15_1" name="br_min_default15_1" type="text"></input>
+                            </td>
+                          </tr>
+                          <tr>
+                              <td class="c_sp_tb_cam_stream_head">
+                                <span id="lang_record_quality">VIDEO QUALITY</span>
+                              </td>
+                              <td>
+                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name="">HIGHT</select>
+                                
+                              </td>
+                              <td>
+                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name="">HIGHT</select>
+                                
+                              </td>
+                            </tr>
+                            <tr>
+                                <td class="c_sp_tb_cam_stream_head">
+                                  <span id="lang_record_audio">AUDIO</span>
+                                </td>
+                                <td>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name=""></select>
+                                  
+                                </td>
+                                <td>
+                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name=""></select>
+                                  
+                                </td>
+                              </tr>
+                        </tbody>
+                      </table>
+                      <div id="btn_copyto"><input id="cs_button" type="button" value="COPY TO" class="c_sp_btn_copyto"/></div>
+                    </div>
                     <div id="image_tab_setup">
                       <table class="c_sp_tb_cam_image4">
                         <tbody>
@@ -808,670 +1260,6 @@
                         </tbody>
                       </table>
                       <input type="button" value="Advanced" id="goto_advanced" class="c_sp_btn_okcancel"/>
-                    </div>
-                    <div id="image_tab_camtitle">
-                      
-                            <div class="c_sp_div_frame c_sp_div_frame_dot">
-                               
-                                <table class="c_sp_tb_cam_cam4">
-                                    <thead>
-                                        <tr>
-                                            <td class="table-head c_sp_td_cam_head1">
-                                            <span id='lang_camCh'>
-                                                Ch.
-                                            </span>
-                                            </td>
-                                            <td class="table-head c_sp_td_cam_head2">
-                                            <span id='lang_camTitle'>
-                                                Camera Name
-                                            </span>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <span id='lang_selectAll'>
-                                                All
-                                            </span>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="iAllTextTitle" maxlength="16" style="ime-mode:disabled">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch1">
-                                                1
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title0" name="cam_title0" maxlength="16" style="ime-mode:disabled"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch2">
-                                                2
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title1" name="cam_title1" maxlength="16" style="ime-mode:disabled"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch3">
-                                                3
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title2" name="cam_title2" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch4">
-                                                4
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title3" name="cam_title3" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tbody class='chenable8'>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch5">
-                                                5
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title4" name="cam_title4" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch6">
-                                                6
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title5" name="cam_title5" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch7">
-                                                7
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title6" name="cam_title6" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch8">
-                                                8
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title7" name="cam_title7" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tbody class='chenable16'>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch9">
-                                                9
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title8" name="cam_title8" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch10">
-                                                10
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title9" name="cam_title9" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch11">
-                                                11
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title10" name="cam_title10" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch12">
-                                                12
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title11" name="cam_title11" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch13">
-                                                13
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title12" name="cam_title12" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch14">
-                                                14
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title13" name="cam_title13" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch15">
-                                                15
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title14" name="cam_title14" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="c_sp_td_cam_ch" >
-                                            <div id="ch16">
-                                                16
-                                            </div>
-                                            </td>
-                                            <td class="c_sp_td_cam_title" >
-                                            <input type="text" class="c_sp_txt_cam_title" id="cam_title15" name="cam_title15" maxlength="16" style="ime-mode:disabled" >
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                          
-                            <div id="c_g_div_msg">
-                                <div id="errMsg">
-                                </div>
-                                <div id="printMsg">
-                                </div>
-                            </div>
-                        
-                    </form>
-                    </div>
-                    <div id="image_tab_stream">
-                      <div>
-                        <select class="add_width_150" id="stream_ch"></select>
-                      </div>
-                      <table>
-                        <tbody>
-                           <tr>
-                            <td rowspan="2" class="c_sp_tb_cam_stream_head">
-                              <span id="lang_property">속성</span>
-                            </td>
-                            <td colspan="2" class="c_sp_tb_cam_stream_head">
-                              <span id="lang_video_stream">비디오 영상</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_video_1">비디오1</span>
-                            </td>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_video_2">비디오2</span>
-                            </td>
-                          </tr>
-                          <tr style="display:none">
-                            <td>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt0" name="encoder_cnt0"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt1" name="encoder_cnt1"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt2" name="encoder_cnt2"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt3" name="encoder_cnt3"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt4" name="encoder_cnt4"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt5" name="encoder_cnt5"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt6" name="encoder_cnt6"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt7" name="encoder_cnt7"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt8" name="encoder_cnt8"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt9" name="encoder_cnt9"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt10" name="encoder_cnt10"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt11" name="encoder_cnt11"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt12" name="encoder_cnt12"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt13" name="encoder_cnt13"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt14" name="encoder_cnt14"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="encoder_cnt15" name="encoder_cnt15"></input>
-                            </td>
-                            <td>
-
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_codec">코덱</span>
-                            </td>
-                            <td>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default0_0" name="vcodec_default0_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default1_0" name="vcodec_default1_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default2_0" name="vcodec_default2_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default3_0" name="vcodec_default3_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default4_0" name="vcodec_default4_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default5_0" name="vcodec_default5_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default6_0" name="vcodec_default6_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default7_0" name="vcodec_default7_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default8_0" name="vcodec_default8_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default9_0" name="vcodec_default9_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default10_0" name="vcodec_default10_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default11_0" name="vcodec_default11_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default12_0" name="vcodec_default12_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default13_0" name="vcodec_default13_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default14_0" name="vcodec_default14_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default15_0" name="vcodec_default15_0">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                            </td>
-                            <td>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default0_1" name="vcodec_default0_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default1_1" name="vcodec_default1_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default2_1" name="vcodec_default2_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default3_1" name="vcodec_default3_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default4_1" name="vcodec_default4_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default5_1" name="vcodec_default5_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default6_1" name="vcodec_default6_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default7_1" name="vcodec_default7_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default8_1" name="vcodec_default8_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default9_1" name="vcodec_default9_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default10_1" name="vcodec_default10_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default11_1" name="vcodec_default11_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default12_1" name="vcodec_default12_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default13_1" name="vcodec_default13_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default14_1" name="vcodec_default14_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="vcodec_default15_1" name="vcodec_default15_1">
-                                <!-- <option>H.264</option>
-                                <option>H.265</option> -->
-                              </select>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_record_size">해상도</span>
-                            </td>
-                            <td>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name="res_default0_0"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default1_0" name="res_default1_0"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default2_0" name="res_default2_0"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default3_0" name="res_default3_0"></select>
-
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default4_0" name="res_default4_0"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default5_0" name="res_default5_0"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default6_0" name="res_default6_0"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default7_0" name="res_default7_0"></select>
-
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default8_0" name="res_default8_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default9_0" name="res_default9_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default10_0" name="res_default10_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default11_0" name="res_default11_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default12_0" name="res_default12_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default13_0" name="res_default13_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default14_0" name="res_default14_0"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default15_0" name="res_default15_0"></select>
-                            </td>
-                            <td>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name="res_default0_1"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default1_1" name="res_default1_1"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default2_1" name="res_default2_1"></select>
-                              <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default3_1" name="res_default3_1"></select>
-
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default4_1" name="res_default4_1"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default5_1" name="res_default5_1"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default6_1" name="res_default6_1"></select>
-                              <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default7_1" name="res_default7_1"></select>
-
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default8_1" name="res_default8_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default9_1" name="res_default9_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default10_1" name="res_default10_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default11_1" name="res_default11_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default12_1" name="res_default12_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default13_1" name="res_default13_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default14_1" name="res_default14_1"></select>
-                              <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="res_default15_1" name="res_default15_1"></select>
-                            </td>
-                          </tr>
-                          <tr>
-                              <td class="c_sp_tb_cam_stream_head">
-                                <span id="lang_record_fps">FPS</span>
-                              </td>
-                              <td>
-                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_default0_0" name="fps_default0_0"></select>
-                              <td>
-                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_default0_0" name="fps_default0_1"></select>
-                                  </td>
-                            
-                            </tr>
-                            <tr id="tr_bitrate_control">
-                                <td class="c_sp_tb_cam_stream_head">
-                                  <span id="lang_bitrate_control">비트레이트 제어</span>
-                                </td>
-                                <td>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default0_0" name="bitctrl_default0_0"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default1_0" name="bitctrl_default1_0"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default2_0" name="bitctrl_default2_0"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default3_0" name="bitctrl_default3_0"></select>
-    
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default4_0" name="bitctrl_default4_0"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default5_0" name="bitctrl_default5_0"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default6_0" name="bitctrl_default6_0"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default7_0" name="bitctrl_default7_0"></select>
-    
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default8_0" name="bitctrl_default8_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default9_0" name="bitctrl_default9_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default10_0" name="bitctrl_default10_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default11_0" name="bitctrl_default11_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default12_0" name="bitctrl_default12_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default13_0" name="bitctrl_default13_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default14_0" name="bitctrl_default14_0"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default15_0" name="bitctrl_default15_0"></select>
-                                </td>
-                                <td>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default0_1" name="bitctrl_default0_1"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default1_1" name="bitctrl_default1_1"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default2_1" name="bitctrl_default2_1"></select>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default3_1" name="bitctrl_default3_1"></select>
-    
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default4_1" name="bitctrl_default4_1"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default5_1" name="bitctrl_default5_1"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default6_1" name="bitctrl_default6_1"></select>
-                                  <select class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default7_1" name="bitctrl_default7_1"></select>
-    
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default8_1" name="bitctrl_default8_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default9_1" name="bitctrl_default9_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default10_1" name="bitctrl_default10_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default11_1" name="bitctrl_default11_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default12_1" name="bitctrl_default12_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default13_1" name="bitctrl_default13_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default14_1" name="bitctrl_default14_1"></select>
-                                  <select class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="bitctrl_default15_1" name="bitctrl_default15_1"></select>
-                                </td>
-                              </tr>
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_maximum_frame_rate">최대 FPS</span>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default0_0" name="fps_max_default0_0"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default1_0" name="fps_max_default1_0"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default2_0" name="fps_max_default2_0"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default3_0" name="fps_max_default3_0"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default4_0" name="fps_max_default4_0"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default5_0" name="fps_max_default5_0"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default6_0" name="fps_max_default6_0"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default7_0" name="fps_max_default7_0"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default8_0" name="fps_max_default8_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default9_0" name="fps_max_default9_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default10_0" name="fps_max_default10_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default11_0" name="fps_max_default11_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default12_0" name="fps_max_default12_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default13_0" name="fps_max_default13_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default14_0" name="fps_max_default14_0"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default15_0" name="fps_max_default15_0"></input>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default0_1" name="fps_max_default0_1"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default1_1" name="fps_max_default1_1"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default2_1" name="fps_max_default2_1"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default3_1" name="fps_max_default3_1"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default4_1" name="fps_max_default4_1"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default5_1" name="fps_max_default5_1"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default6_1" name="fps_max_default6_1"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default7_1" name="fps_max_default7_1"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default8_1" name="fps_max_default8_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default9_1" name="fps_max_default9_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default10_1" name="fps_max_default10_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default11_1" name="fps_max_default11_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default12_1" name="fps_max_default12_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default13_1" name="fps_max_default13_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default14_1" name="fps_max_default14_1"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="fps_max_default15_1" name="fps_max_default15_1"></input>
-                            </td>
-                          </tr>
-                          
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_maximum_bit_rate">최대 전송속도(kbps)</span>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default0_0" name="br_max_default0_0" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default1_0" name="br_max_default1_0"  type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default2_0" name="br_max_default2_0"  type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default3_0" name="br_max_default3_0"  type="text"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default4_0" name="br_max_default4_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default5_0" name="br_max_default5_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default6_0" name="br_max_default6_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default7_0" name="br_max_default7_0" type="text"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default8_0" name="br_max_default8_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default9_0" name="br_max_default9_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default10_0" name="br_max_default10_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default11_0" name="br_max_default11_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default12_0" name="br_max_default12_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default13_0" name="br_max_default13_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default14_0" name="br_max_default14_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default15_0" name="br_max_default15_0" type="text"></input>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default0_1" name="br_max_default0_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default1_1" name="br_max_default1_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default2_1" name="br_max_default2_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default3_1" name="br_max_default3_1" type="text"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default4_1" name="br_max_default4_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default5_1" name="br_max_default5_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default6_1" name="br_max_default6_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default7_1" name="br_max_default7_1" type="text"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default8_1" name="br_max_default8_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default9_1" name="br_max_default9_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default10_1" name="br_max_default10_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default11_1" name="br_max_default11_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default12_1" name="br_max_default12_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default13_1" name="br_max_default13_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default14_1" name="br_max_default14_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_max_default15_1" name="br_max_default15_1" type="text"></input>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="c_sp_tb_cam_stream_head">
-                              <span id="lang_minumum_bit_rate">최소 전송속도(kbps)</span>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default0_0" name="br_min_default0_0" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default1_0" name="br_min_default1_0" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default2_0" name="br_min_default2_0" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default3_0" name="br_min_default3_0" type="text"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default4_0" name="br_min_default4_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default5_0" name="br_min_default5_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default6_0" name="br_min_default6_0" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default7_0" name="br_min_default7_0" type="text"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default8_0" name="br_min_default8_0" type="text" ></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default9_0" name="br_min_default9_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default10_0" name="br_min_default10_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default11_0" name="br_min_default11_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default12_0" name="br_min_default12_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default13_0" name="br_min_default13_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default14_0" name="br_min_default14_0" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default15_0" name="br_min_default15_0" type="text"></input>
-                            </td>
-                            <td>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default0_1" name="br_min_default0_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default1_1" name="br_min_default1_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default2_1" name="br_min_default2_1" type="text"></input>
-                              <input class="add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default3_1" name="br_min_default3_1" type="text"></input>
-
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default4_1" name="br_min_default4_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default5_1" name="br_min_default5_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default6_1" name="br_min_default6_1" type="text"></input>
-                              <input class="chenable8 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default7_1" name="br_min_default7_1" type="text"></input>
-
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default8_1" name="br_min_default8_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default9_1" name="br_min_default9_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default10_1" name="br_min_default10_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default11_1" name="br_min_default11_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default12_1" name="br_min_default12_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default13_1" name="br_min_default13_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default14_1" name="br_min_default14_1" type="text"></input>
-                              <input class="chenable16 add_width_150 add_margin_left_25 add_margin_right_25" id="br_min_default15_1" name="br_min_default15_1" type="text"></input>
-                            </td>
-                          </tr>
-                          <tr>
-                              <td class="c_sp_tb_cam_stream_head">
-                                <span id="lang_record_quality">VIDEO QUALITY</span>
-                              </td>
-                              <td>
-                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name="">HIGHT</select>
-                                
-                              </td>
-                              <td>
-                                <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name="">HIGHT</select>
-                                
-                              </td>
-                            </tr>
-                            <tr>
-                                <td class="c_sp_tb_cam_stream_head">
-                                  <span id="lang_record_audio">AUDIO</span>
-                                </td>
-                                <td>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_0" name=""></select>
-                                  
-                                </td>
-                                <td>
-                                  <select class="add_width_150 add_margin_left_25 add_margin_right_25" id="res_default0_1" name=""></select>
-                                  
-                                </td>
-                              </tr>
-                        </tbody>
-                      </table>
-                      <div id="btn_copyto"><input id="cs_button" type="button" value="COPY TO" class="c_sp_btn_copyto"/></div>
                     </div>
                   </div>
 

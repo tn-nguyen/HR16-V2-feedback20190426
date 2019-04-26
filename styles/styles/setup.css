@@ -1326,7 +1326,7 @@ option.red    ,select.red   {background-color:red;}
 
 
 #camsetting_cam  > div > div > table {
-  margin: 0px;
+  margin: 0px !important;
 
 }
 
@@ -2261,3 +2261,7 @@ h2#h2_OnoffSchedule{
 #lang_fac_message{
   white-space: pre-wrap;
 }
+
+/* #image_tabs ul li:nth-child(1){
+  display: none
+} */

@@ -131,7 +131,7 @@ function print_left_menu(obj, cate, sub)
 
         // ------
         // Main String for Camera
-        obj.write("<li><a href='../html/setup_cam_image.htm'><span id='lang_MenuCamera'><img src='../images/images/dot_one.gif'>lang_MenuCamera</span></a></li>");
+        obj.write("<li><a href='../html/setup_cam_title.htm'><span id='lang_MenuCamera'><img src='../images/images/dot_one.gif'>lang_MenuCamera</span></a></li>");
         obj.write("<ul style=\"padding-left:20px;\">");
 
         // ------
@@ -144,18 +144,10 @@ function print_left_menu(obj, cate, sub)
         if( ((menuMask & 256) == 0 && INFO_CAMERA_INSTALL_MODE == '1' && SUPPORT_OPENMODE == '1') ||  patt.exec(INFO_MODEL) != null)
           obj.write("<li "+ sub_s_8 + "><a href='../Viewer.htm#setup/Camera/CameraInstallation'><span id='lang_MenuCamCamInst'><img src='../images/images/dot_" + sub_i_8 + ".gif'>lang_MenuCamCamInst</span></a></li>");
 
-        // if( (menuMask & 1) == 0 && false)
-        //   obj.write("<li "+ sub_s_0 + "><a href='../html/setup_cam_title.htm'><span id='lang_MenuCamTitle'><img src='../images/images/dot_" + sub_i_0 + ".gif'>lang_MenuCamTitle</span></a></li>");
+         if( (menuMask & 1) == 0)
+           obj.write("<li "+ sub_s_0 + "><a href='../html/setup_cam_title.htm'><span id='lang_MenuCamTitle'><img src='../images/images/dot_" + sub_i_0 + ".gif'>lang_MenuCamTitle</span></a></li>");
 
         // TODO image setup is dependant on DVR MODEL
-        if( (menuMask & 2) == 0 && false) {
-          if( INFO_MODEL.indexOf("IPX")  >= 0 ) {
-            obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_compatibility.htm'><span id='lang_MenuCamCameraSetup'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamCameraSetup</span></a></li>");
-          } else {
-            obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_image.htm'><span id='lang_MenuCamImage'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamImage</span></a></li>");
-          }
-        }
-        // image setup page
         if( (menuMask & 2) == 0) {
           if( INFO_MODEL.indexOf("IPX")  >= 0 ) {
             obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_compatibility.htm'><span id='lang_MenuCamCameraSetup'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamCameraSetup</span></a></li>");
@@ -163,6 +155,14 @@ function print_left_menu(obj, cate, sub)
             obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_image.htm'><span id='lang_MenuCamImage'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamImage</span></a></li>");
           }
         }
+        // // image setup page
+        // if( (menuMask & 2) == 0) {
+        //   if( INFO_MODEL.indexOf("IPX")  >= 0 ) {
+        //     obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_compatibility.htm'><span id='lang_MenuCamCameraSetup'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamCameraSetup</span></a></li>");
+        //   } else {
+        //     obj.write("<li "+ sub_s_1 + "><a href='../html/setup_cam_image.htm'><span id='lang_MenuCamImage'><img src='../images/images/dot_" + sub_i_1 + ".gif'>lang_MenuCamImage</span></a></li>");
+        //   }
+        // }
 
         if( (menuMask & 4) == 0 && false)
           obj.write("<li "+ sub_s_2 + "><a href='../html/setup_cam_covert.htm'><span id='lang_MenuCamCovert'><img src='../images/images/dot_" + sub_i_2 + ".gif'>lang_MenuCamCovert</span></a></li>");
