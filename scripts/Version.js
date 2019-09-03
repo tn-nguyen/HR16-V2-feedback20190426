@@ -61,9 +61,10 @@ Version.prototype = {
         } else if (INFO_VENDOR.indexOf("I3DVR") >= 0) {
             this.infoheader = 'Web Viewer Information';
           //this.info1 = 'DVR Model : ' + model;
-          this.info1 = 'HVR Model : ' + 'Veo' + model_array[2].substring(0, 2) + 'p';//  + " / " + model_array[2].substring(2, 4) + '0' + langArray['LTXT_RECTITLE_FPS'];
+          //this.info1 = 'HVR Model : ' + 'Veo' + model_array[2].substring(0, 2) + 'p';//  + " / " + model_array[2].substring(2, 4) + '0' + langArray['LTXT_RECTITLE_FPS'];
+          this.info1 = 'HVR Model : HR16(v2)';
           this.info2 = 'WEB Version : ' + this.version;
-          this.info3 = "&copy; Copyright 2018 i3international Inc."
+          this.info3 = "&copy; Copyright 2019 i3international Inc."
         } else {
           this.infoheader = 'Web Viewer Information';
           this.info1 = 'DVR Model : ' + model;
